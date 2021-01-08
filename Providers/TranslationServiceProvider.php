@@ -48,10 +48,9 @@ class TranslationServiceProvider extends ServiceProvider
             BuildingSidebar::class,
             $this->getSidebarClassForModule('translation', RegisterTranslationSidebar::class)
         );
-
         $this->app['events']->listen(LoadingBackendTranslations::class, function (LoadingBackendTranslations $event) {
             $event->load('translations', Arr::dot(trans('translation::translations')));
-            $event->load('locales', Arr::dot(trans('translation::locales')));
+
         });
 
         app('router')->bind('translations', function ($id) {

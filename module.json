@@ -1,9 +1,14 @@
 {
+    "title": "Translation",
     "name": "Translation",
     "alias": "translation",
     "description": "Module containing all EncoreCms translations",
-    "version": "1.0.0",
-    "keywords": [],
+    "keywords": [
+        "EncoreCMS",
+        "Translation"],
+    "author": "Marcos Rativa",
+    "require": {},
+    "version": "2.0.0",
     "active": 1,
     "priority": 2,
     "providers": [
@@ -12,5 +17,6 @@
     ],
     "aliases":{},
     "files": [
-    ]
+    ],
+    "minimumCoreVersion": "2.0"
 }
